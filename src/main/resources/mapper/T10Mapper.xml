@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yidao.greengroup.dao.T10Mapper">
+  <insert id="addT10Data">
+      insert into t_10(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+   </insert>
+    <insert id="addT11Data">
+        insert into t_11(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT15Data">
+        insert into t_15(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT16Data">
+        insert into t_16(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT17Data">
+         insert into t_17(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT18Data">
+         insert into t_18(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT19Data">
+        insert into t_19(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT21Data">
+        insert into t_21(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT22Data">
+        insert into t_22(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT24Data">
+        insert into t_24(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT26Data">
+        insert into t_26(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT27Data">
+        insert into t_27(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT28Data">
+        insert into t_28(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT29Data">
+        insert into t_29(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT30Data">
+        insert into t_30(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT40Data">
+        insert into t_40(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT41Data">
+        insert into t_41(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT42Data">
+        insert into t_42(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT43Data">
+        insert into t_43(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+    <insert id="addT44Data">
+        insert into t_44(current,Voltage,power,wh,time1) VALUES(#{current},#{voltage},#{power},#{wh},#{time1});
+    </insert>
+
+
+
+
+    <select id="findT10Data" resultType="com.yidao.greengroup.po.Enginer.T10">
+         SELECT * FROM t_10  order by tid desc limit 0,1;
+    </select>
+    <select id="findT11Data" resultType="com.yidao.greengroup.po.Enginer.T11">
+ SELECT * FROM t_11  order by tid desc limit 0,1;
+    </select>
+    <select id="findT15Data" resultType="com.yidao.greengroup.po.Enginer.T15">
+ SELECT * FROM t_15  order by tid desc limit 0,1;
+    </select>
+    <select id="findT16Data" resultType="com.yidao.greengroup.po.Enginer.T16">
+ SELECT * FROM t_16  order by tid desc limit 0,1;
+    </select>
+    <select id="findT17Data" resultType="com.yidao.greengroup.po.Enginer.T17">
+ SELECT * FROM t_17  order by tid desc limit 0,1;
+    </select>
+    <select id="findT18Data" resultType="com.yidao.greengroup.po.Enginer.T18">
+ SELECT * FROM t_18  order by tid desc limit 0,1;
+    </select>
+    <select id="findT19Data" resultType="com.yidao.greengroup.po.Enginer.T19">
+ SELECT * FROM t_19  order by tid desc limit 0,1;
+    </select>
+
+    <select id="findT21Data" resultType="com.yidao.greengroup.po.Enginer.T21">
+ SELECT * FROM t_21  order by tid desc limit 0,1;
+    </select>
+    <select id="findT22Data" resultType="com.yidao.greengroup.po.Enginer.T22">
+       SELECT * FROM t_22  order by tid desc limit 0,1;
+    </select>
+    <select id="findT24Data" resultType="com.yidao.greengroup.po.Enginer.T24">
+ SELECT * FROM t_24  order by tid desc limit 0,1;
+    </select>
+    <select id="findT26Data" resultType="com.yidao.greengroup.po.Enginer.T26">
+ SELECT * FROM t_26  order by tid desc limit 0,1;
+    </select>
+    <select id="findT27Data" resultType="com.yidao.greengroup.po.Enginer.T27">
+ SELECT * FROM t_27  order by tid desc limit 0,1;
+    </select>
+    <select id="findT28Data" resultType="com.yidao.greengroup.po.Enginer.T28">
+ SELECT * FROM t_28  order by tid desc limit 0,1;
+    </select>
+    <select id="findT29Data" resultType="com.yidao.greengroup.po.Enginer.T29">
+ SELECT * FROM t_29  order by tid desc limit 0,1;
+    </select>
+    <select id="findT30Data" resultType="com.yidao.greengroup.po.Enginer.T30">
+ SELECT * FROM t_30  order by tid desc limit 0,1;
+    </select>
+    <select id="findT40Data" resultType="com.yidao.greengroup.po.Enginer.T40">
+ SELECT * FROM t_40  order by tid desc limit 0,1;
+    </select>
+    <select id="findT41Data" resultType="com.yidao.greengroup.po.Enginer.T41">
+ SELECT * FROM t_41  order by tid desc limit 0,1;
+    </select>
+    <select id="findT42Data" resultType="com.yidao.greengroup.po.Enginer.T42">
+ SELECT * FROM t_42  order by tid desc limit 0,1;
+    </select>
+    <select id="findT43Data" resultType="com.yidao.greengroup.po.Enginer.T43">
+ SELECT * FROM t_43  order by tid desc limit 0,1;
+    </select>
+    <select id="findT44Data" resultType="com.yidao.greengroup.po.Enginer.T44">
+ SELECT * FROM t_44  order by tid desc limit 0,1;
+    </select>
+
+
+    <select id="findT10Data50" resultType="com.yidao.greengroup.po.Enginer.T10">
+         SELECT * FROM t_10  order by tid desc limit 0,100;
+    </select>
+    <select id="findT11Data50" resultType="com.yidao.greengroup.po.Enginer.T11">
+ SELECT * FROM t_11  order by tid desc limit 0,100;
+    </select>
+    <select id="findT15Data50" resultType="com.yidao.greengroup.po.Enginer.T15">
+ SELECT * FROM t_15  order by tid desc limit 0,100;
+    </select>
+    <select id="findT16Data50" resultType="com.yidao.greengroup.po.Enginer.T16">
+ SELECT * FROM t_16  order by tid desc limit 0,100;
+    </select>
+    <select id="findT17Data50" resultType="com.yidao.greengroup.po.Enginer.T17">
+ SELECT * FROM t_17  order by tid desc limit 0,100;
+    </select>
+    <select id="findT18Data50" resultType="com.yidao.greengroup.po.Enginer.T18">
+ SELECT * FROM t_18  order by tid desc limit 0,100;
+    </select>
+    <select id="findT19Data50" resultType="com.yidao.greengroup.po.Enginer.T19">
+ SELECT * FROM t_19  order by tid desc limit 0,100;
+    </select>
+
+    <select id="findT21Data50" resultType="com.yidao.greengroup.po.Enginer.T21">
+ SELECT * FROM t_21  order by tid desc limit 0,100;
+    </select>
+    <select id="findT22Data50" resultType="com.yidao.greengroup.po.Enginer.T22">
+       SELECT * FROM t_22  order by tid desc limit 0,100;
+    </select>
+    <select id="findT24Data50" resultType="com.yidao.greengroup.po.Enginer.T24">
+ SELECT * FROM t_24  order by tid desc limit 0,100;
+    </select>
+    <select id="findT26Data50" resultType="com.yidao.greengroup.po.Enginer.T26">
+ SELECT * FROM t_26  order by tid desc limit 0,100;
+    </select>
+    <select id="findT27Data50" resultType="com.yidao.greengroup.po.Enginer.T27">
+ SELECT * FROM t_27  order by tid desc limit 0,100;
+    </select>
+    <select id="findT28Data50" resultType="com.yidao.greengroup.po.Enginer.T28">
+ SELECT * FROM t_28  order by tid desc limit 0,100;
+    </select>
+    <select id="findT29Data50" resultType="com.yidao.greengroup.po.Enginer.T29">
+ SELECT * FROM t_29  order by tid desc limit 0,100;
+    </select>
+    <select id="findT30Data50" resultType="com.yidao.greengroup.po.Enginer.T30">
+ SELECT * FROM t_30  order by tid desc limit 0,100;
+    </select>
+    <select id="findT40Data50" resultType="com.yidao.greengroup.po.Enginer.T40">
+ SELECT * FROM t_40  order by tid desc limit 0,100;
+    </select>
+    <select id="findT41Data50" resultType="com.yidao.greengroup.po.Enginer.T41">
+ SELECT * FROM t_41  order by tid desc limit 0,100;
+    </select>
+    <select id="findT42Data50" resultType="com.yidao.greengroup.po.Enginer.T42">
+ SELECT * FROM t_42  order by tid desc limit 0,100;
+    </select>
+    <select id="findT43Data50" resultType="com.yidao.greengroup.po.Enginer.T43">
+ SELECT * FROM t_43  order by tid desc limit 0,100;
+    </select>
+    <select id="findT44Data50" resultType="com.yidao.greengroup.po.Enginer.T44">
+ SELECT * FROM t_44  order by tid desc limit 0,100;
+    </select>
+
+
+
+</mapper>

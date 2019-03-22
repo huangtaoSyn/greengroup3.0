@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yidao.greengroup.dao.DeviceMapper">
+    <resultMap id="test3" type="com.yidao.greengroup.po.Device">
+        <id column="did" property="did"></id>
+        <result column="deviceName" property="deviceName"></result>
+        <result column="deviceEnginer" property="deviceEnginer"></result>
+        <result column="deviceUseTime" property="deviceUseTime"></result>
+        <result column="productlineid" property="productlineid"></result>
+    </resultMap>
+    <insert id="addDevice">
+       insert INTO device(did,deviceName,deviceEnginer,deviceUseTime) VALUES(#{did},#{deviceName},#{deviceEnginer},#{deviceUseTime});
+    </insert>
+    <select id="findDeviceById" resultMap="test3">
+      select * from device where did=#{id};
+    </select>
+    <select id="findDeviceByName">
+
+    </select>
+    <!--这里的值需要与device类一样-->
+    <update id="updataDevice">
+       UPDATE device SET deviceName = #{deviceName} ,deviceUseTime = #{deviceUseTime} WHERE did = #{did};
+    </update>
+    <delete id="deleDevice">
+      DELETE  from device where did  = #{did};
+    </delete>
+
+
+    <select id="findAllDevice" resultMap="test3">
+      SELECT * from device;
+    </select>
+
+</mapper>

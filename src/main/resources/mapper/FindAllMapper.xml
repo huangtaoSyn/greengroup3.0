@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yidao.greengroup.dao.FindAllMapper">
+
+   <resultMap id="test5" type="com.yidao.greengroup.po.ResultBase" >
+       <id column="baseId" property="id"></id>
+       <result column="baseName" property="bname"></result>
+       <collection property="resultProductLiner" ofType="com.yidao.greengroup.po.ResultProductLiner">
+           <id column="resultId" property="productLineId"></id>
+           <result column="resultLineName" property="pname"></result>
+           <result column="base_Id" property="baseId"></result>
+           <collection property="resultDevices" ofType="com.yidao.greengroup.po.ResultDevice">
+               <id column="dids" property="did"></id>
+               <result column="deviceNames" property="deviceName"></result>
+               <result column="productlineids" property="productlineid"></result>
+               <result column="rdid" property="rdid"></result>
+           </collection>
+       </collection>
+   </resultMap>
+
+    <select id="findAll" resultMap="test5">
+      SELECT
+        resultBase.baseId,
+	    resultBase.baseName,
+	    resultProductLiner.resultId,
+	    resultProductLiner.resultLineName,
+	    resultProductLiner.base_Id,
+	    resultDevice.dids,
+	    resultDevice.deviceNames,
+        resultDevice.rdid,
+        resultDevice.productlineids
+      from
+        resultBase,
+	    resultProductLiner,
+	    resultDevice
+       where
+        resultBase.baseId = resultProductLiner.base_Id
+       and
+	     resultProductLiner.resultId = resultDevice.productlineids
+	   and
+	      resultDevice.rdid = resultBase.baseId
+	    and
+	    resultBase.baseId = #{id}
+    </select>
+
+
+    <delete id="dele">
+        DELETE from  resultproductliner  where resultId = #{addrId1} and base_Id =  #{corpId1};
+    </delete>
+
+ <resultMap id="test6" type="com.yidao.greengroup.po.Base">
+     <id column="base_id" property="id"></id>
+     <result column="base_name" property="bname"></result>
+ </resultMap>
+    <select id="searchBase" resultMap="test6">
+        select * from base;
+    </select>
+
+    <delete id="deleDevice">
+        delete from resultDevice where productlineids = #{addrId} and rdid =  #{corpId}
+    </delete>
+</mapper>

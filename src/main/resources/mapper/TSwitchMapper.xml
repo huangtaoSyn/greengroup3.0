@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yidao.greengroup.dao.TSwitchMapper">
+    <insert id="addT10Switch">
+       insert into t_10_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT11Switch">
+      insert into t_11_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT15Switch">
+     insert into t_15_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT16Switch">
+     insert into t_16_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT17Switch">
+     insert into t_17_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT18Switch">
+    insert into t_18_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT19Switch">
+       insert into t_19_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT21Switch">
+     insert into t_21_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT22Switch">
+     insert into t_22_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT24Switch">
+      insert into t_24_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT26Switch">
+      insert into t_26_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT27Switch">
+      insert into t_27_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT28Switch">
+         insert into t_28_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT29Switch">
+     insert into t_29_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT30Switch">
+    insert into t_30_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT40Switch">
+    insert into t_40_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT41Switch">
+    insert into t_41_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT42Switch">
+    insert into t_42_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT43Switch">
+     insert into t_43_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+    <insert id="addT44Switch">
+     insert into t_44_switch(logTime,switchStatus,currentWh) VALUES(#{logTime},#{switchStatus},#{currentWh});
+    </insert>
+
+
+    <select id="findT10Switch" resultType="com.yidao.greengroup.po.Enginer.T10Switch">
+       SELECT * from t_10_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT11Switch" resultType="com.yidao.greengroup.po.Enginer.T11Switch">
+        SELECT * from t_11_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT15Switch" resultType="com.yidao.greengroup.po.Enginer.T15Switch">
+        SELECT * from t_15_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT16Switch" resultType="com.yidao.greengroup.po.Enginer.T16Switch">
+        SELECT * from t_16_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT17Switch" resultType="com.yidao.greengroup.po.Enginer.T17Switch">
+        SELECT * from t_17_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT18Switch" resultType="com.yidao.greengroup.po.Enginer.T18Switch">
+        SELECT * from t_18_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT19Switch" resultType="com.yidao.greengroup.po.Enginer.T19Switch">
+        SELECT * from t_19_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT21Switch" resultType="com.yidao.greengroup.po.Enginer.T21Switch">
+        SELECT * from t_21_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT22Switch" resultType="com.yidao.greengroup.po.Enginer.T22Switch">
+        SELECT * from t_22_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT24Switch" resultType="com.yidao.greengroup.po.Enginer.T24Switch">
+        SELECT * from t_24_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT26Switch" resultType="com.yidao.greengroup.po.Enginer.T26Switch">
+        SELECT * from t_26_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT27Switch" resultType="com.yidao.greengroup.po.Enginer.T27Switch">
+        SELECT * from t_27_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT28Switch" resultType="com.yidao.greengroup.po.Enginer.T28Switch">
+        SELECT * from t_28_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT29Switch" resultType="com.yidao.greengroup.po.Enginer.T29Switch">
+        SELECT * from t_29_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT30Switch" resultType="com.yidao.greengroup.po.Enginer.T30Switch">
+        SELECT * from t_30_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT40Switch" resultType="com.yidao.greengroup.po.Enginer.T40Switch">
+        SELECT * from t_40_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT41Switch" resultType="com.yidao.greengroup.po.Enginer.T41Switch">
+        SELECT * from t_41_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT42Switch" resultType="com.yidao.greengroup.po.Enginer.T42Switch">
+        SELECT * from t_42_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT43Switch" resultType="com.yidao.greengroup.po.Enginer.T43Switch">
+        SELECT * from t_43_switch order by sid desc limit 0,2;
+    </select>
+    <select id="findT44Switch" resultType="com.yidao.greengroup.po.Enginer.T44Switch">
+        SELECT * from t_44_switch order by sid desc limit 0,2;
+    </select>
+
+
+    <select id="findT10Switch1" resultType="com.yidao.greengroup.po.Enginer.T10Switch">
+       SELECT * from t_10_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT11Switch1" resultType="com.yidao.greengroup.po.Enginer.T11Switch">
+        SELECT * from t_11_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT15Switch1" resultType="com.yidao.greengroup.po.Enginer.T15Switch">
+        SELECT * from t_15_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT16Switch1" resultType="com.yidao.greengroup.po.Enginer.T16Switch">
+        SELECT * from t_16_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT17Switch1" resultType="com.yidao.greengroup.po.Enginer.T17Switch">
+        SELECT * from t_17_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT18Switch1" resultType="com.yidao.greengroup.po.Enginer.T18Switch">
+        SELECT * from t_18_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT19Switch1" resultType="com.yidao.greengroup.po.Enginer.T19Switch">
+        SELECT * from t_19_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT21Switch1" resultType="com.yidao.greengroup.po.Enginer.T21Switch">
+        SELECT * from t_21_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT22Switch1" resultType="com.yidao.greengroup.po.Enginer.T22Switch">
+        SELECT * from t_22_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT24Switch1" resultType="com.yidao.greengroup.po.Enginer.T24Switch">
+        SELECT * from t_24_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT26Switch1" resultType="com.yidao.greengroup.po.Enginer.T26Switch">
+        SELECT * from t_26_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT27Switch1" resultType="com.yidao.greengroup.po.Enginer.T27Switch">
+        SELECT * from t_27_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT28Switch1" resultType="com.yidao.greengroup.po.Enginer.T28Switch">
+        SELECT * from t_28_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT29Switch1" resultType="com.yidao.greengroup.po.Enginer.T29Switch">
+        SELECT * from t_29_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT30Switch1" resultType="com.yidao.greengroup.po.Enginer.T30Switch">
+        SELECT * from t_30_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT40Switch1" resultType="com.yidao.greengroup.po.Enginer.T40Switch">
+        SELECT * from t_40_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT41Switch1" resultType="com.yidao.greengroup.po.Enginer.T41Switch">
+        SELECT * from t_41_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT42Switch1" resultType="com.yidao.greengroup.po.Enginer.T42Switch">
+        SELECT * from t_42_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT43Switch1" resultType="com.yidao.greengroup.po.Enginer.T43Switch">
+        SELECT * from t_43_switch order by sid desc limit 0,1;
+    </select>
+    <select id="findT44Switch1" resultType="com.yidao.greengroup.po.Enginer.T44Switch">
+        SELECT * from t_44_switch order by sid desc limit 0,1;
+    </select>
+
+
+    <select id="findT10Switch11" resultType="com.yidao.greengroup.po.Enginer.T10Switch">
+      SELECT * from t_10_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT11Switch11" resultType="com.yidao.greengroup.po.Enginer.T11Switch">
+        SELECT * from t_11_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT15Switch11" resultType="com.yidao.greengroup.po.Enginer.T15Switch">
+        SELECT * from t_15_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT16Switch11" resultType="com.yidao.greengroup.po.Enginer.T16Switch">
+        SELECT * from t_16_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT17Switch11" resultType="com.yidao.greengroup.po.Enginer.T17Switch">
+        SELECT * from t_17_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT18Switch11" resultType="com.yidao.greengroup.po.Enginer.T18Switch">
+        SELECT * from t_18_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT19Switch11" resultType="com.yidao.greengroup.po.Enginer.T19Switch">
+        SELECT * from t_19_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT21Switch11" resultType="com.yidao.greengroup.po.Enginer.T21Switch">
+        SELECT * from t_21_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT22Switch11" resultType="com.yidao.greengroup.po.Enginer.T22Switch">
+        SELECT * from t_22_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT24Switch11" resultType="com.yidao.greengroup.po.Enginer.T24Switch">
+        SELECT * from t_24_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT26Switch11" resultType="com.yidao.greengroup.po.Enginer.T26Switch">
+        SELECT * from t_26_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT27Switch11" resultType="com.yidao.greengroup.po.Enginer.T27Switch">
+       SELECT * from t_27_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT28Switch11" resultType="com.yidao.greengroup.po.Enginer.T28Switch">
+        SELECT * from t_28_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT29Switch11" resultType="com.yidao.greengroup.po.Enginer.T29Switch">
+        SELECT * from t_29_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT30Switch11" resultType="com.yidao.greengroup.po.Enginer.T30Switch">
+        SELECT * from t_30_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT40Switch11" resultType="com.yidao.greengroup.po.Enginer.T40Switch">
+        SELECT * from t_40_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT41Switch11" resultType="com.yidao.greengroup.po.Enginer.T41Switch">
+       SELECT * from t_41_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT42Switch11" resultType="com.yidao.greengroup.po.Enginer.T42Switch">
+        SELECT * from t_42_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT43Switch11" resultType="com.yidao.greengroup.po.Enginer.T43Switch">
+        SELECT * from t_43_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+    <select id="findT44Switch11" resultType="com.yidao.greengroup.po.Enginer.T44Switch">
+        SELECT * from t_44_switch where logTime >=(NOW() - interval 24 hour) order by sid desc;
+    </select>
+
+    <resultMap id="test8" type="com.yidao.greengroup.po.ResultDevice">
+        <id column="dids" property="did"></id>
+        <result column="deviceNames" property="deviceName"></result>
+        <result column="productlineids" property="productlineid"></result>
+        <result column="rdid" property="rdid"></result>
+    </resultMap>
+
+    <select id="findDefinedData" resultMap="test8">
+        SELECT
+          resultdevice.*
+        from
+          resultdevice
+        where
+          resultdevice.productlineids=#{pid}
+	    and
+	      resultdevice.rdid = #{did}
+    </select>
+
+</mapper>

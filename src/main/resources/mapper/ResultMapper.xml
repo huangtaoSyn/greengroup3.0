@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yidao.greengroup.dao.ResultMapper">
+    <insert id="addResultBase">
+        insert into resultBase(baseId,baseName) VALUES(#{id},#{bname});
+    </insert>
+    <insert id="addResultDevice">
+        insert into resultDevice(dids,deviceNames,productlineids,rdid) VALUES(#{did},#{deviceName},#{productlineid},#{rdid});
+    </insert>
+    <insert id="addResultProductLiner">
+      insert into resultProductLiner(resultId ,resultLineName,base_Id ) VALUES(#{productLineId},#{pname},#{baseId});
+    </insert>
+</mapper>

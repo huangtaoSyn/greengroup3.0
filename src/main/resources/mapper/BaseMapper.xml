@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yidao.greengroup.dao.BaseMapper">
+  <insert id="addBase" parameterType="com.yidao.greengroup.po.Base">
+      insert INTO base(base_name,create_time) VALUES(#{bname},#{createTime});
+  </insert>
+
+    <select id="findBaseByName" resultType="com.yidao.greengroup.po.Base" parameterType="java.lang.String">
+        select  * from base where base_name = #{bname};
+    </select>
+
+    <resultMap id="test" type="com.yidao.greengroup.po.Base">
+        <id column="base_id" property="id"></id>
+        <result column="base_name" property="bname"></result>
+        <result column="create_time" property="createTime"></result>
+    </resultMap>
+
+    <select id="findAllBase" resultMap="test">
+        select  * from base;
+    </select>
+
+    <select id="findBaseById" resultMap="test">
+        select * from base where base_id=#{id};
+    </select>
+    <update id="updataBase">
+        UPDATE base SET base_name = #{bname} ,create_time = #{createTime} WHERE base_id = #{id};
+    </update>
+    <delete id="dele">
+       <!-- DELETE  from base where base_id in
+        <foreach  item="item" collection="list" index="index"  open="(" separator="," close=")">#{item}</foreach>-->
+        DELETE  from base where base_id  = #{id}
+    </delete>
+</mapper>

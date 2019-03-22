@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yidao.greengroup.dao.WhlsMapper">
+    <resultMap id="test" type="com.yidao.greengroup.po.Whls">
+        <id column="id" property="id"></id>
+        <result column="DateTime" property="currentTime"></result>
+        <result column="topic" property="topic"></result>
+        <result column="value" property="value"></result>
+    </resultMap>
+
+
+    <select id="findAllWhls" resultMap="test">
+        SELECT * FROM whls WHERE DateTime IS NOT NULL AND DateTime>DATE_ADD(NOW(), INTERVAL -10 SECOND);
+         /*SELECT * FROM whls  order by id desc limit 0,30;*/
+    </select>
+</mapper>

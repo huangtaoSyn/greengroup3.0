@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yidao.greengroup.dao.ProductLineMapper">
+    <insert id="addProductLine">
+       insert INTO productline(productLine_name,productLineUseTime) VALUES(#{pname},#{productLineUseTime});
+    </insert>
+
+    <resultMap id="test1" type="com.yidao.greengroup.po.ProductLine">
+        <id column="productLine_id" property="productLineId"></id>
+        <result column="productLine_name" property="pname"></result>
+        <result column="b_id" property="baseId"></result>
+        <result column="productLineUseTime" property="productLineUseTime"></result>
+    </resultMap>
+
+    <select id="findAllProductLine" resultMap="test1">
+      select * from productline;
+    </select>
+    <select id="findProductLineById" resultMap="test1">
+     select * from productline where productLine_id = #{id};
+    </select>
+    <select id="findProductLineName">
+
+    </select>
+    <update id="updataProductLine">
+      UPDATE productline SET productLine_name = #{pname} ,productLineUseTime = #{productLineUseTime} WHERE productLine_id = #{productLineId};
+    </update>
+    <delete id="deleProductLine">
+          DELETE  from productline where productLine_id  = #{id}
+    </delete>
+</mapper>
